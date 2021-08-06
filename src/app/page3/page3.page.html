@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Page 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Page 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">The West Coast</ion-card-title>
+      <ion-card-subtitle class="subtitle">Peaceful and breathtaking</ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/westcoast.JPG" alt="WestCoast">
+      </ion-card-image>
+    </ion-card-header>
+
+    <ion-card-content class="content">
+      This was taken somewhere between Trinidad and Crescent City, California. I took a trip with some of my friends
+      to visit my parents for the weekend who live up in Brookings, Oregon. It was a beautiful short trip. This part
+      of the West Coast in Northern California and Southern Oregon was peaceful and breathtaking for me. Even though the
+      water was
+      too cold to swim in, I enjoyed all of it's nature and habitat. Would definitely be a trip that I would take again
+      someday.
+    </ion-card-content>
+    <ion-item>
+      <ion-button fill="outline" [routerDirection]="root" [routerLink]="['/toc']">
+        Table Of Contents
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root"
+        [routerLink]="['/page2']">
+        Back
+      </ion-button>
+      <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/page4']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

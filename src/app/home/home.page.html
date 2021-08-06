@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,30 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">My Favorite Photos</ion-card-title>
+      <ion-card-subtitle class="subtitle">Some of my best photos</ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/brookings.JPG" alt="Brookings">
+      </ion-card-image>
+    </ion-card-header>
+
+    <ion-card-content class="content">
+      This photo book is about some of my most favorite photos that I have taken and the stories behind them.
+    </ion-card-content>
+
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/toc']">
+        Next
+      </ion-button>
+    </ion-item>
+
+  </ion-card>
 </ion-content>

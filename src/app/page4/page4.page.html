@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Page 4
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Page 4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">Riga Latvia</ion-card-title>
+      <ion-card-subtitle class="subtitle">My first home</ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/riga.JPG" alt="Riga">
+      </ion-card-image>
+    </ion-card-header>
+
+    <ion-card-content class="content">
+      Riga is a city located in a North Eastern European country between Estonia and
+      Lithuania called Latvia and it use to be
+      part of the Soviet Union. The city of Riga is considered a party city in Europe. I was born in this are and lived
+      there for a total
+      of 7 years before I moved
+      to the United States. The photo was taken from the Radisson Daugava Hotel during sunrise in the fall of 2018. Here
+      you can see the
+      skyline of the 800 year old city with some
+      well known landmarks like St. Peters Cathedral located near the center of the photo, the Daugava River, and the
+      building on the far right which use to be a Soviet
+      university built during the Stalinist Era. Riga is a fun town and would recommend anyone to visit.
+    </ion-card-content>
+    <ion-item>
+      <ion-button fill="outline" [routerDirection]="root" [routerLink]="['/toc']">
+        Table Of Contents
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root"
+        [routerLink]="['/page3']">
+        Back
+      </ion-button>
+      <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/page5']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

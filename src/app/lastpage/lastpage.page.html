@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Last Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Last Page</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">The End of Photo Gallery</ion-card-title>
+      <ion-card-subtitle class="subtitle">Thank You for checking out my Favorite Photos!</ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/bva.JPG" alt="BVA">
+      </ion-card-image>
+    </ion-card-header>
+    <ion-item>
+      <ion-button fill="outline" [routerDirection]="root" [routerLink]="['/toc']">
+        Table Of Contents
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root"
+        [routerLink]="['/page5']">
+        Back
+      </ion-button>
+      <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/home']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

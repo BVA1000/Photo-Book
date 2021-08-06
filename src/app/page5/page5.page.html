@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Page 5
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Page 5</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">Whitefish Lake</ion-card-title>
+      <ion-card-subtitle class="subtitle">God's glory is shining through the clouds</ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/whitefish.jpeg" alt="Whitefish">
+      </ion-card-image>
+    </ion-card-header>
+
+    <ion-card-content class="content">
+      A very recent photo I took after my move to Montana is this beautiful photo taken at Whitefish Lake.
+      About fifteen minutes away from where I currently live, Whitefish Lake is a beautiful natural lake.
+      Some famous people like Mel Gibson live near this lake. I was with some friends at Whitefish City Beach
+      and it started to rain and then I saw the clouds moving forming this amazing effect with the rays of the sun.
+      To me it looks as if God's glory is shining through the clouds.
+    </ion-card-content>
+    <ion-item>
+      <ion-button fill="outline" [routerDirection]="root" [routerLink]="['/toc']">
+        Table Of Contents
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root"
+        [routerLink]="['/page4']">
+        Back
+      </ion-button>
+      <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/lastpage']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

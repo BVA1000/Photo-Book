@@ -1,5 +1,7 @@
 {
   "name": "MyIonicBookApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

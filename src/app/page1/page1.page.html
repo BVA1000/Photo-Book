@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Page 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Page 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">The Storm</ion-card-title>
+      <ion-card-subtitle class="subtitle">
+        An intriguing experience
+      </ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/thestorm.JPG" alt="TheStorm">
+      </ion-card-image>
+    </ion-card-header>
+
+    <ion-card-content class="content">
+      This was taken in the north part of Redding, California from my friend Luke's house.
+      He graduated from Shasta College in May of 2019 and part of the ceremony got cancelled due to this huge storm.
+      It was raining hail and thunder which resulted in a beautiful picture with the sun shining on the great clouds
+      as it was setting.
+    </ion-card-content>
+    <ion-item>
+      <ion-button fill="outline" [routerDirection]="root" [routerLink]="['/toc']">
+        Table Of Contents
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root" [routerLink]="['/toc']">
+        Back
+      </ion-button>
+      <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/page2']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

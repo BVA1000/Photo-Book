@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Page 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Page 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="background">
+    <ion-card-header>
+      <ion-card-title class="title">Captiva Island</ion-card-title>
+      <ion-card-subtitle class="subtitle">A place I really love</ion-card-subtitle>
+      <br />
+      <ion-card-image>
+        <img class="center" src="../../assets/images/captiva.JPG" alt="Captiva">
+      </ion-card-image>
+    </ion-card-header>
+
+    <ion-card-content class="content">
+      Captiva Island is a beautiful island located on the west gulf coast of Florida about 40 minutes away from Fort
+      Myers.
+      It was a family vacation which took place last year in 2020 where we spent a week enjoying the beach, boating,
+      ocean fishing,
+      and is a great place for sea shell hunting. We were celebrating my grandma's 75th and grandpa's 70th Birthdays as
+      well as
+      seeing what it was like for our parents who also explored the area 35 years ago. One of my favorite parts of the
+      island
+      were the sunsets on the beach and this is my favorite photo of one of those sunsets.
+    </ion-card-content>
+    <ion-item>
+      <ion-button fill="outline" [routerDirection]="root" [routerLink]="['/toc']">
+        Table Of Contents
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root"
+        [routerLink]="['/page1']">
+        Back
+      </ion-button>
+      <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+        [routerLink]="['/page3']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

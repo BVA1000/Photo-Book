@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      My Favorite Photos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="background">
+    <ion-card-content>
+      <ion-card-header>
+        <ion-card-title class="title">Table of Contents</ion-card-title>
+      </ion-card-header>
+      <ion-list *ngFor="let section of sections">
+        <ion-item [routerDirection]="root" [routerLink]="[section.url]">
+          {{section.title}}
+        </ion-item>
+      </ion-list>
+      <ion-item>
+        <ion-button fill="outline" slots="start" routerDirection="back" [routerDirection]="root"
+          [routerLink]="['/home']">
+          Back
+        </ion-button>
+        <ion-button fill="outline" slots="end" routerDirection="forward" [routerDirection]="root"
+          [routerLink]="['/page1']">
+          Next
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- <ion-content>
+  <ion-card class="background">
+    <ion-card-content>
+      <ion-list *ngFor="let section of sections">
+        <ion-item [routerDirection]="root" [routerLink]="[section.url]">
+          {{section.title}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content> -->
